@@ -1,6 +1,6 @@
 # Guide to Comparing Domestic Franchises
 
-**Creator:** Student project  
+**Creator:** Sarraf Priti  
 **Project:** Compare three South Korean fried-chicken franchise brands using one consistent metric.
 
 ## About
