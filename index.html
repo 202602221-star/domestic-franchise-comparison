@@ -2,113 +2,112 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A student guide comparing three Korean fried-chicken franchise brands using comparable franchise-location counts.">
-<title>Guide to Comparing Domestic Franchises</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A multilingual guide comparing three South Korean fried-chicken franchise brands.">
+<title>Domestic Franchise Comparison Guide</title>
 <style>
-:root{--ink:#18212f;--muted:#596579;--paper:#f6f7fb;--card:#fff;--line:#dfe4ec;--accent:#ed6a3a;--accent-dark:#a93d1c;--navy:#182b49}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-header{background:linear-gradient(125deg,#182b49,#304d72);color:white;padding:48px 20px 42px}
-.wrap{max-width:1060px;margin:auto;padding:0 20px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;font-weight:700;color:#ffd6c6}
-h1{font-size:clamp(2rem,5vw,3.7rem);line-height:1.08;margin:12px 0 16px;max-width:760px}
-header p{max-width:720px;color:#e7edf5;font-size:1.08rem;margin:0}
-main{padding:28px 0 56px}.section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin:18px 0;box-shadow:0 5px 20px #182b4908}
-h2{margin:0 0 12px;font-size:1.45rem;color:var(--navy)}h3{margin:0 0 6px;color:var(--navy)}
+:root{--ink:#18212f;--muted:#596579;--paper:#f6f7fb;--card:#fff;--line:#dfe4ec;--accent:#ed6a3a;--navy:#182b49}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+header{background:linear-gradient(125deg,#182b49,#304d72);color:#fff;padding:40px 0}.wrap{max-width:1080px;margin:auto;padding:0 20px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:700;color:#ffd6c6}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;margin:12px 0}header p{max-width:780px;color:#e7edf5;margin:8px 0}
+select{padding:10px 12px;border:1px solid #ccd4df;border-radius:10px;background:#fff;color:#18212f;font-size:1rem}
+main{padding:22px 0 50px}.section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 5px 20px #182b4908}
+h2{margin:0 0 12px;color:var(--navy);font-size:1.4rem}h3{margin:0 0 7px;color:var(--navy)}
 .small{font-size:.92rem;color:var(--muted)}.brands{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.brand{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}.brand .number{font-size:1.75rem;font-weight:800;color:var(--accent-dark);line-height:1.25}
-.pill{display:inline-block;border-radius:999px;background:#fff0e9;color:#8d3518;padding:4px 10px;font-size:.8rem;font-weight:700}
-.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:590px}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f0f3f8;color:var(--navy);font-size:.92rem}tbody tr:last-child td{border-bottom:0}.metric{font-weight:800;font-variant-numeric:tabular-nums}
-.controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 16px}
-button{border:0;border-radius:10px;background:var(--navy);color:white;padding:11px 15px;font-size:.95rem;font-weight:700;cursor:pointer}
-button.secondary{background:#e9edf4;color:var(--navy)}button:hover{filter:brightness(1.08)}button:focus-visible,a:focus-visible{outline:3px solid #f5a623;outline-offset:3px}
+.brand{border:1px solid var(--line);border-radius:13px;padding:17px;background:#fff}.number{font-size:1.7rem;font-weight:800;color:#a93d1c;line-height:1.3}
 .notice{border-left:4px solid var(--accent);padding:12px 15px;background:#fff6f1;border-radius:0 10px 10px 0}
-.query-list{display:grid;gap:12px}.query{padding:14px;border:1px solid var(--line);border-radius:12px}.query code{display:block;white-space:normal;overflow-wrap:anywhere;font-size:.95rem;color:#a33c1b;font-weight:700;margin-bottom:5px}
-a{color:#1d5ca8;overflow-wrap:anywhere}.sources li{margin:10px 0}.ko{color:#46566b;background:#f4f6fa;padding:12px 14px;border-radius:10px;margin-top:8px}.footer{text-align:center;color:var(--muted);font-size:.88rem;padding:20px}
-@media(max-width:720px){header{padding:36px 0}.brands{grid-template-columns:1fr}.section{padding:18px;margin:14px 0}.wrap{padding:0 14px}th,td{padding:10px 9px}}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:580px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f0f3f8;color:var(--navy)}tbody tr:last-child td{border-bottom:0}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 16px}button{border:0;border-radius:10px;background:var(--navy);color:#fff;padding:11px 15px;font-size:.95rem;font-weight:700;cursor:pointer}button.secondary{background:#e9edf4;color:var(--navy)}button:hover{filter:brightness(1.08)}
+.query{padding:13px;border:1px solid var(--line);border-radius:12px;margin:11px 0}.query code{display:block;overflow-wrap:anywhere;color:#a33c1b;font-weight:700;margin-bottom:5px}
+a{color:#1d5ca8;overflow-wrap:anywhere}.sources li{margin:11px 0}.footer{text-align:center;color:var(--muted);font-size:.88rem;padding:20px}
+@media(max-width:720px){.wrap{padding:0 14px}.brands{grid-template-columns:1fr}.section{padding:17px}.top{align-items:flex-start}th,td{padding:9px}}
 </style>
 </head>
 <body>
 <header><div class="wrap">
-<div class="eyebrow">Student research project · South Korea</div>
-<h1>Guide to Comparing Domestic Franchises</h1>
-<p>Three well-known Korean fried-chicken brands, compared using one simple and consistent measure: the number of franchise locations.</p>
-<p class="ko">국내 프랜차이즈 비교 가이드: 한국의 대표적인 치킨 브랜드 세 곳을 동일한 기준인 가맹점 수로 비교합니다.</p>
+<div class="top"><div class="eyebrow" data-i18n="eyebrow">Student research project · South Korea</div>
+<label><span data-i18n="languageLabel">Choose language</span>
+<select id="language" aria-label="Choose language">
+<option value="en">English</option><option value="ne">नेपाली (Nepali)</option><option value="uz">O‘zbekcha (Uzbek)</option><option value="fil">Filipino</option><option value="vi">Tiếng Việt (Vietnamese)</option>
+</select></label></div>
+<h1 data-i18n="title">Guide to Comparing Domestic Franchises</h1>
+<p data-i18n="subtitle">Compare three well-known South Korean fried-chicken brands using one consistent measure: the number of franchise locations.</p>
 </div></header>
 <main class="wrap">
-<section class="section">
-<h2>1. What are we comparing?</h2>
-<p><strong>Industry:</strong> Fried-chicken restaurants in South Korea.</p>
-<p><strong>Metric:</strong> Number of franchise locations (stores), not total company revenue and not average sales per store.</p>
-<p><strong>Data year:</strong> 2024 year-end. The figures below are reported in a summary of the Korea Fair Trade Commission's franchise statistics. Publication date and data year are different: the report was published in 2026, while the counts describe the end of 2024.</p>
-<div class="notice"><strong>Important:</strong> Store count does not tell us whether a franchise is more profitable, cheaper to open, or better for every owner. This page compares only the number of franchise locations.</div>
-<p class="ko"><strong>비교 기준:</strong> 한국 치킨 프랜차이즈의 2024년 말 가맹점 수를 비교합니다. 보고서 발행 연도와 데이터 기준 연도는 다를 수 있습니다. 가맹점 수가 많다고 해서 수익성이 더 높다는 뜻은 아닙니다.</p>
+<section class="section"><h2 data-i18n="criteriaTitle">1. What are we comparing?</h2>
+<p><strong data-i18n="industryLabel">Industry:</strong> <span data-i18n="industry">Fried-chicken restaurants in South Korea.</span></p>
+<p><strong data-i18n="metricLabel">Metric:</strong> <span data-i18n="metric">Number of franchise locations (stores), not company revenue or average sales per store.</span></p>
+<p><strong data-i18n="yearLabel">Data year:</strong> <span data-i18n="yearText">2024 year-end. Publication date and data year are different: a report can be published later but describe earlier figures.</span></p>
+<div class="notice"><strong data-i18n="warningLabel">Important:</strong> <span data-i18n="warning">A larger store count does not prove higher profit, lower startup costs, or better quality. This page compares store count only.</span></div>
 </section>
-<section class="section">
-<h2>2. Meet the three brands</h2>
+<section class="section"><h2 data-i18n="brandsTitle">2. Meet the three brands</h2>
 <div class="brands">
-<article class="brand"><h3>BBQ (비비큐)</h3><div class="number">2,316 stores</div><p class="small">A major Korean fried-chicken franchise with a large domestic store network.</p><p class="ko">국내에 많은 가맹점을 운영하는 주요 치킨 프랜차이즈입니다.</p></article>
-<article class="brand"><h3>bhc (비에이치씨)</h3><div class="number">2,228 stores</div><p class="small">A large Korean chicken brand known for fried chicken and seasoned menu options.</p><p class="ko">후라이드 치킨과 다양한 양념 메뉴로 알려진 대형 치킨 브랜드입니다.</p></article>
-<article class="brand"><h3>Kyochon Chicken (교촌치킨)</h3><div class="number">1,361 stores</div><p class="small">A Korean chicken franchise especially associated with soy-garlic and other seasoned chicken.</p><p class="ko">간장·마늘 맛 등 다양한 치킨 메뉴로 알려진 한국 치킨 프랜차이즈입니다.</p></article>
-</div>
-</section>
-<section class="section">
-<h2>3. Comparison table</h2>
-<p class="small">All figures use the same metric, unit, and base year: franchise locations (stores), 2024 year-end.</p>
-<div class="controls">
-<button id="desc" type="button">Highest to Lowest</button>
-<button id="asc" type="button" class="secondary">Lowest to Highest</button>
-<button id="reset" type="button" class="secondary">Reset order</button>
-</div>
-<div class="table-wrap"><table>
-<thead><tr><th>Brand</th><th>Franchise locations</th><th>Unit</th><th>Base year</th><th>Source</th></tr></thead>
-<tbody id="comparisonRows">
-<tr data-count="2316" data-order="0"><td><strong>BBQ (비비큐)</strong></td><td class="metric">2,316</td><td>Stores</td><td>2024 year-end</td><td><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener">KFTC statistics summary (PDF attachment)</a></td></tr>
-<tr data-count="2228" data-order="1"><td><strong>bhc (비에이치씨)</strong></td><td class="metric">2,228</td><td>Stores</td><td>2024 year-end</td><td><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener">KFTC statistics summary (PDF attachment)</a></td></tr>
-<tr data-count="1361" data-order="2"><td><strong>Kyochon Chicken (교촌치킨)</strong></td><td class="metric">1,361</td><td>Stores</td><td>2024 year-end</td><td><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener">KFTC statistics summary (PDF attachment)</a></td></tr>
+<article class="brand"><h3>BBQ (비비큐)</h3><div class="number">2,316 <span data-i18n="stores">stores</span></div><p data-i18n="bbq">A major Korean fried-chicken franchise with a large domestic store network.</p></article>
+<article class="brand"><h3>bhc (비에이치씨)</h3><div class="number">2,228 <span data-i18n="stores">stores</span></div><p data-i18n="bhc">A large Korean chicken brand known for fried chicken and seasoned menu options.</p></article>
+<article class="brand"><h3>Kyochon Chicken (교촌치킨)</h3><div class="number">1,361 <span data-i18n="stores">stores</span></div><p data-i18n="kyochon">A Korean chicken franchise associated with soy-garlic and other seasoned chicken.</p></article>
+</div></section>
+<section class="section"><h2 data-i18n="tableTitle">3. Comparison table</h2>
+<p class="small" data-i18n="tableNote">All figures use the same metric, unit, and base year: franchise locations (stores), 2024 year-end.</p>
+<div class="controls"><button id="desc" data-i18n="desc">Highest to Lowest</button><button id="asc" class="secondary" data-i18n="asc">Lowest to Highest</button><button id="reset" class="secondary" data-i18n="reset">Reset order</button></div>
+<div class="table-wrap"><table><thead><tr><th data-i18n="brandHead">Brand</th><th data-i18n="countHead">Franchise locations</th><th data-i18n="unitHead">Unit</th><th data-i18n="baseHead">Base year</th><th data-i18n="sourceHead">Source</th></tr></thead>
+<tbody id="rows">
+<tr data-count="2316" data-order="0"><td><strong>BBQ (비비큐)</strong></td><td>2,316</td><td data-i18n="stores">stores</td><td data-i18n="baseYear">2024 year-end</td><td><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener" data-i18n="pdfSource">Statistics summary PDF</a></td></tr>
+<tr data-count="2228" data-order="1"><td><strong>bhc (비에이치씨)</strong></td><td>2,228</td><td data-i18n="stores">stores</td><td data-i18n="baseYear">2024 year-end</td><td><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener" data-i18n="pdfSource">Statistics summary PDF</a></td></tr>
+<tr data-count="1361" data-order="2"><td><strong>Kyochon Chicken (교촌치킨)</strong></td><td>1,361</td><td data-i18n="stores">stores</td><td data-i18n="baseYear">2024 year-end</td><td><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener" data-i18n="pdfSource">Statistics summary PDF</a></td></tr>
 </tbody></table></div>
-<p class="ko">표의 모든 수치는 같은 기준인 2024년 말 가맹점 수입니다. 버튼을 누르면 숫자가 큰 순서 또는 작은 순서로 정렬됩니다.</p>
-<p><strong>Finding:</strong> BBQ has the largest reported franchise network among these three brands, followed by bhc and Kyochon Chicken. This is a store-count comparison only, not a ranking of profit or quality.</p>
-<p class="ko"><strong>결과:</strong> 세 브랜드 중 BBQ의 가맹점 수가 가장 많고, bhc와 교촌치킨이 그 뒤를 잇습니다. 이는 가맹점 수만 비교한 결과이며 수익이나 품질 순위는 아닙니다.</p>
+<p><strong data-i18n="findingLabel">Finding:</strong> <span data-i18n="finding">Among these three brands, BBQ has the largest reported store network, followed by bhc and Kyochon Chicken. This is not a ranking of profit or quality.</span></p>
 </section>
-<section class="section">
-<h2>4. Google search history: four search criteria</h2>
-<div class="query-list">
-<div class="query"><code>Domestic franchise revenue rankings</code><p>Broad results may include news articles, blog posts, and different types of revenue. Check whether each number means company revenue or sales per franchise store.</p><p class="ko">검색 범위가 넓어 뉴스, 블로그, 본사 매출과 가맹점 매출이 섞일 수 있으므로 수치의 의미를 확인해야 합니다.</p></div>
-<div class="query"><code>Domestic franchise revenue rankings filetype:pdf</code><p>PDF files can lead to reports and official documents, but you still need to check the publisher, publication date, and data year.</p><p class="ko">PDF 보고서나 공식 문서를 찾는 데 도움이 되지만 발행 기관, 발행일, 데이터 기준 연도를 확인해야 합니다.</p></div>
-<div class="query"><code>Domestic franchise revenue rankings site:naver.com</code><p>This limits results to Naver-hosted pages. Results may be easier to read, but they are not automatically official or verified.</p><p class="ko">네이버에 있는 페이지로 검색 범위를 좁힙니다. 읽기 쉬울 수 있지만 공식 자료라는 뜻은 아닙니다.</p></div>
-<div class="query"><code>Domestic franchise revenue rankings after:2024-06-01 before:2026-01-01</code><p>This limits results by publication date. A recent post may still report older data, so publication date and data year must be recorded separately.</p><p class="ko">게시물 발행일을 제한하는 검색입니다. 최근 게시물도 과거 데이터를 사용할 수 있으므로 발행일과 데이터 연도를 따로 기록해야 합니다.</p></div>
-</div>
+<section class="section"><h2 data-i18n="searchTitle">4. Google search history: four search criteria</h2>
+<div class="query"><code>Domestic franchise revenue rankings</code><p data-i18n="q1">Broad results can mix news, blogs, company revenue, and franchisee sales. Check what each number means.</p></div>
+<div class="query"><code>Domestic franchise revenue rankings filetype:pdf</code><p data-i18n="q2">PDF searches can find reports and official documents. Check the publisher, publication date, and data year.</p></div>
+<div class="query"><code>Domestic franchise revenue rankings site:naver.com</code><p data-i18n="q3">This limits results to Naver pages. A page being on Naver does not automatically make it official or verified.</p></div>
+<div class="query"><code>Domestic franchise revenue rankings after:2024-06-01 before:2026-01-01</code><p data-i18n="q4">This limits publication dates. A recent post can still use older data, so record publication date and data year separately.</p></div>
 </section>
-<section class="section">
-<h2>5. Sources and verification notes</h2>
+<section class="section"><h2 data-i18n="sourcesTitle">5. Sources and verification notes</h2>
 <ol class="sources">
-<li><a href="https://franchise.ftc.go.kr/firHope/comparePopup.do" target="_blank" rel="noopener">Korea Fair Trade Commission (KFTC) — Franchise disclosure comparison portal</a><br><span class="small">Official tool for checking franchise disclosure information, including store counts and average franchisee sales by year. Use it to verify each brand's disclosure record.</span></li>
-<li><a href="https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=45987&pageIndex=1&pageUnit=10&rltnNttSn=43749&searchCnd=all&searchCtgry=01%2C02&searchViolt=13" target="_blank" rel="noopener">KFTC — 2024 franchise business statistics announcement (published April 2025)</a><br><span class="small">Official background source explaining how franchise statistics are compiled and why the report's publication year may differ from the year of the store-count data.</span></li>
-<li><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener">Franchise statistics summary PDF attachment</a><br><span class="small">The search-indexed summary lists the 2024 year-end chicken-brand franchise counts used in this comparison. The link is hosted by a university notice page rather than the KFTC domain, so use the official KFTC portal above for cross-checking.</span></li>
-<li><a href="https://www.ftc.go.kr/www/contents.do?key=267" target="_blank" rel="noopener">KFTC — Public information and franchise-related statistics</a><br><span class="small">Official directory for franchise disclosure records and franchise statistics.</span></li>
+<li><a href="https://franchise.ftc.go.kr/firHope/comparePopup.do" target="_blank" rel="noopener" data-i18n="s1title">Korea Fair Trade Commission (KFTC) — Franchise disclosure comparison portal</a><br><span class="small" data-i18n="s1desc">Official tool for checking franchise disclosure information, including store counts and average franchisee sales by year.</span></li>
+<li><a href="https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=45987&pageIndex=1&pageUnit=10&rltnNttSn=43749&searchCnd=all&searchCtgry=01%2C02&searchViolt=13" target="_blank" rel="noopener" data-i18n="s2title">KFTC — 2024 franchise business statistics announcement</a><br><span class="small" data-i18n="s2desc">Official background source about franchise statistics and reporting periods.</span></li>
+<li><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener" data-i18n="s3title">Franchise statistics summary PDF attachment</a><br><span class="small" data-i18n="s3desc">A summary listing the counts used here. It is hosted on a university page, not the KFTC domain, so cross-check against the official portal.</span></li>
+<li><a href="https://www.ftc.go.kr/www/contents.do?key=267" target="_blank" rel="noopener" data-i18n="s4title">KFTC — Public information and franchise-related statistics</a><br><span class="small" data-i18n="s4desc">Official directory for public information and franchise-related statistics.</span></li>
 </ol>
-<div class="notice"><strong>Verification note:</strong> Before submitting, open the KFTC comparison portal and search each brand. If the official portal shows a different count or base year, update the table and cite the exact official record. Do not substitute corporate revenue for franchise-location counts.</div>
-<p class="ko"><strong>검증 안내:</strong> 제출 전에 공정거래위원회 가맹사업정보공개 시스템에서 각 브랜드를 검색해 수치와 기준 연도를 다시 확인하세요. 공식 자료에서 다른 수치가 확인되면 표를 수정하고 해당 자료를 출처로 표시하세요.</p>
+<div class="notice"><strong data-i18n="verifyLabel">Before submitting:</strong> <span data-i18n="verify">Open the official KFTC portal and verify each brand's 2024 year-end count. If the official record differs, update the table. Do not replace store counts with company revenue.</span></div>
 </section>
-<footer class="footer">Student research guide · All links open in a new tab · No external APIs required</footer>
+<footer class="footer" data-i18n="footer">Student research guide · Responsive design · No external APIs required</footer>
 </main>
 <script>
-(() => {
- const body = document.getElementById('comparisonRows');
- const initial = Array.from(body.querySelectorAll('tr'));
- function sortRows(direction) {
-   const rows = Array.from(body.querySelectorAll('tr'));
-   rows.sort((a,b) => {
-     const av = Number(a.dataset.count), bv = Number(b.dataset.count);
-     if (!Number.isFinite(av) || !Number.isFinite(bv)) return 0;
-     return direction === 'asc' ? av-bv : bv-av;
-   });
-   rows.forEach(row => body.appendChild(row));
- }
- document.getElementById('desc').addEventListener('click', () => sortRows('desc'));
- document.getElementById('asc').addEventListener('click', () => sortRows('asc'));
- document.getElementById('reset').addEventListener('click', () => initial.forEach(row => body.appendChild(row)));
-})();
+const translations = {
+en:{
+eyebrow:"Student research project · South Korea",languageLabel:"Choose language",title:"Guide to Comparing Domestic Franchises",subtitle:"Compare three well-known South Korean fried-chicken brands using one consistent measure: the number of franchise locations.",
+criteriaTitle:"1. What are we comparing?",industryLabel:"Industry:",industry:"Fried-chicken restaurants in South Korea.",metricLabel:"Metric:",metric:"Number of franchise locations (stores), not company revenue or average sales per store.",yearLabel:"Data year:",yearText:"2024 year-end. Publication date and data year are different: a report can be published later but describe earlier figures.",warningLabel:"Important:",warning:"A larger store count does not prove higher profit, lower startup costs, or better quality. This page compares store count only.",
+brandsTitle:"2. Meet the three brands",stores:"stores",bbq:"A major Korean fried-chicken franchise with a large domestic store network.",bhc:"A large Korean chicken brand known for fried chicken and seasoned menu options.",kyochon:"A Korean chicken franchise associated with soy-garlic and other seasoned chicken.",tableTitle:"3. Comparison table",tableNote:"All figures use the same metric, unit, and base year: franchise locations (stores), 2024 year-end.",desc:"Highest to Lowest",asc:"Lowest to Highest",reset:"Reset order",brandHead:"Brand",countHead:"Franchise locations",unitHead:"Unit",baseHead:"Base year",sourceHead:"Source",baseYear:"2024 year-end",pdfSource:"Statistics summary PDF",findingLabel:"Finding:",finding:"Among these three brands, BBQ has the largest reported store network, followed by bhc and Kyochon Chicken. This is not a ranking of profit or quality.",searchTitle:"4. Google search history: four search criteria",q1:"Broad results can mix news, blogs, company revenue, and franchisee sales. Check what each number means.",q2:"PDF searches can find reports and official documents. Check the publisher, publication date, and data year.",q3:"This limits results to Naver pages. A page being on Naver does not automatically make it official or verified.",q4:"This limits publication dates. A recent post can still use older data, so record publication date and data year separately.",sourcesTitle:"5. Sources and verification notes",s1title:"Korea Fair Trade Commission (KFTC) — Franchise disclosure comparison portal",s1desc:"Official tool for checking franchise disclosure information, including store counts and average franchisee sales by year.",s2title:"KFTC — 2024 franchise business statistics announcement",s2desc:"Official background source about franchise statistics and reporting periods.",s3title:"Franchise statistics summary PDF attachment",s3desc:"A summary listing the counts used here. It is hosted on a university page, not the KFTC domain, so cross-check against the official portal.",s4title:"KFTC — Public information and franchise-related statistics",s4desc:"Official directory for public information and franchise-related statistics.",verifyLabel:"Before submitting:",verify:"Open the official KFTC portal and verify each brand's 2024 year-end count. If the official record differs, update the table. Do not replace store counts with company revenue.",footer:"Student research guide · Responsive design · No external APIs required"},
+ne:{
+eyebrow:"विद्यार्थी अनुसन्धान परियोजना · दक्षिण कोरिया",languageLabel:"भाषा छान्नुहोस्",title:"घरेलु फ्रेन्चाइज तुलना गर्ने मार्गदर्शिका",subtitle:"दक्षिण कोरियाका तीन लोकप्रिय फ्राइड चिकेन ब्रान्डलाई एउटै मापदण्ड—फ्रेन्चाइज पसलको सङ्ख्या—का आधारमा तुलना गर्नुहोस्।",
+criteriaTitle:"१. हामी के तुलना गर्दैछौँ?",industryLabel:"क्षेत्र:",industry:"दक्षिण कोरियाका फ्राइड चिकेन रेस्टुरेन्टहरू।",metricLabel:"मापदण्ड:",metric:"फ्रेन्चाइज पसलको सङ्ख्या; कम्पनीको आम्दानी वा प्रतिपसल औसत बिक्री होइन।",yearLabel:"तथ्याङ्क वर्ष:",yearText:"२०२४ को अन्त्य। रिपोर्ट प्रकाशित भएको मिति र तथ्याङ्कले जनाउने वर्ष फरक हुन सक्छन्।",warningLabel:"महत्त्वपूर्ण:",warning:"पसल धेरै हुनुको अर्थ नाफा बढी, सुरु गर्ने लागत कम वा गुणस्तर राम्रो भन्ने होइन। यो पृष्ठले पसलको सङ्ख्या मात्र तुलना गर्छ।",
+brandsTitle:"२. तीन ब्रान्डको परिचय",stores:"पसल",bbq:"दक्षिण कोरियामा ठूलो घरेलु पसल सञ्जाल भएको प्रमुख फ्राइड चिकेन फ्रेन्चाइज।",bhc:"फ्राइड चिकेन र विभिन्न स्वादका मेनुका लागि चिनिने ठूलो कोरियाली ब्रान्ड।",kyochon:"सोया-सस र लसुनको स्वादसहितका चिकेनका लागि चिनिने कोरियाली फ्रेन्चाइज।",tableTitle:"३. तुलना तालिका",tableNote:"सबै सङ्ख्याले एउटै मापदण्ड, एकाइ र वर्ष प्रयोग गर्छन्: २०२४ को अन्त्यमा फ्रेन्चाइज पसलको सङ्ख्या।",desc:"धेरैदेखि थोरै",asc:"थोरैदेखि धेरै",reset:"पहिलेकै क्रम",brandHead:"ब्रान्ड",countHead:"फ्रेन्चाइज पसल",unitHead:"एकाइ",baseHead:"आधार वर्ष",sourceHead:"स्रोत",baseYear:"२०२४ को अन्त्य",pdfSource:"तथ्याङ्क सारांश PDF",findingLabel:"निष्कर्ष:",finding:"यी तीनमध्ये BBQ को रिपोर्ट गरिएको पसल सञ्जाल सबैभन्दा ठूलो छ, त्यसपछि bhc र Kyochon Chicken छन्। यो नाफा वा गुणस्तरको क्रम होइन।",searchTitle:"४. Google खोज इतिहास: चार खोज मापदण्ड",q1:"सामान्य खोजमा समाचार, ब्लग, कम्पनीको आम्दानी र फ्रेन्चाइज सञ्चालकको बिक्री मिसिन सक्छ। प्रत्येक सङ्ख्याको अर्थ जाँच्नुहोस्।",q2:"PDF खोजले रिपोर्ट र आधिकारिक कागजात भेटाउन सक्छ। प्रकाशक, प्रकाशन मिति र तथ्याङ्क वर्ष जाँच्नुहोस्।",q3:"यसले नतिजालाई Naver पृष्ठमा सीमित गर्छ। Naver मा भएको पृष्ठ स्वतः आधिकारिक वा प्रमाणित हुँदैन।",q4:"यसले प्रकाशन मिति सीमित गर्छ। नयाँ पोस्टमा पनि पुरानो तथ्याङ्क हुन सक्छ, त्यसैले दुवै मिति छुट्टाछुट्टै लेख्नुहोस्।",sourcesTitle:"५. स्रोत र पुष्टि गर्ने जानकारी",s1title:"कोरिया निष्पक्ष व्यापार आयोग (KFTC) — फ्रेन्चाइज जानकारी तुलना पोर्टल",s1desc:"पसल सङ्ख्या र वार्षिक औसत बिक्रीसहित फ्रेन्चाइज जानकारी जाँच्ने आधिकारिक साधन।",s2title:"KFTC — २०२४ फ्रेन्चाइज व्यवसाय तथ्याङ्क घोषणा",s2desc:"फ्रेन्चाइज तथ्याङ्क र रिपोर्टिङ अवधिबारे आधिकारिक जानकारी।",s3title:"फ्रेन्चाइज तथ्याङ्क सारांश PDF",s3desc:"यहाँ प्रयोग गरिएका सङ्ख्या समेटिएको सारांश। यो KFTC वेबसाइटमा नभई विश्वविद्यालयको पृष्ठमा छ, त्यसैले आधिकारिक पोर्टलमा पुनः जाँच्नुहोस्।",s4title:"KFTC — सार्वजनिक जानकारी र फ्रेन्चाइज तथ्याङ्क",s4desc:"सार्वजनिक जानकारी र फ्रेन्चाइजसम्बन्धी तथ्याङ्कको आधिकारिक निर्देशिका।",verifyLabel:"पेश गर्नुअघि:",verify:"आधिकारिक KFTC पोर्टलमा प्रत्येक ब्रान्डको २०२४ अन्त्यको सङ्ख्या जाँच्नुहोस्। फरक भए तालिका सच्याउनुहोस्। पसल सङ्ख्याको ठाउँमा कम्पनीको आम्दानी नराख्नुहोस्।",footer:"विद्यार्थी अनुसन्धान मार्गदर्शिका · मोबाइलमैत्री · बाह्य API आवश्यक छैन"},
+uz:{
+eyebrow:"Talabalar tadqiqot loyihasi · Janubiy Koreya",languageLabel:"Tilni tanlang",title:"Mahalliy franchayzalarni taqqoslash qo‘llanmasi",subtitle:"Janubiy Koreyadagi uchta mashhur qovurilgan tovuq brendini bir xil mezon — franchayza filiallari soni — bo‘yicha taqqoslang.",
+criteriaTitle:"1. Nimani taqqoslaymiz?",industryLabel:"Soha:",industry:"Janubiy Koreyadagi qovurilgan tovuq restoranlari.",metricLabel:"Mezon:",metric:"Franchayza filiallari soni; kompaniya daromadi yoki bitta filialning o‘rtacha savdosi emas.",yearLabel:"Ma’lumot yili:",yearText:"2024-yil oxiri. Hisobot chop etilgan sana va ma’lumot tegishli bo‘lgan yil bir xil bo‘lmasligi mumkin.",warningLabel:"Muhim:",warning:"Filiallar soni ko‘pligi yuqori foyda, past boshlang‘ich xarajat yoki yaxshiroq sifatni anglatmaydi. Bu sahifa faqat filiallar sonini taqqoslaydi.",
+brandsTitle:"2. Uchta brend bilan tanishing",stores:"ta filial",bbq:"Janubiy Koreyada keng filiallar tarmog‘iga ega yirik qovurilgan tovuq franchayzasi.",bhc:"Qovurilgan tovuq va turli sousli taomlari bilan tanilgan yirik koreys brendi.",kyochon:"Soya-sarimsoq va boshqa ta’mli tovuqlari bilan tanilgan koreys franchayzasi.",tableTitle:"3. Taqqoslash jadvali",tableNote:"Barcha raqamlar bir xil mezon, birlik va yilga tegishli: 2024-yil oxiridagi franchayza filiallari soni.",desc:"Ko‘pdan kamga",asc:"Kamdan ko‘pga",reset:"Dastlabki tartib",brandHead:"Brend",countHead:"Franchayza filiallari",unitHead:"Birlik",baseHead:"Asosiy yil",sourceHead:"Manba",baseYear:"2024-yil oxiri",pdfSource:"Statistika xulosasi PDF",findingLabel:"Xulosa:",finding:"Ushbu uch brend orasida BBQ eng ko‘p filialga ega, undan keyin bhc va Kyochon Chicken turadi. Bu foyda yoki sifat reytingi emas.",searchTitle:"4. Google qidiruv tarixi: to‘rtta qidiruv usuli",q1:"Keng qidiruv natijalarida yangiliklar, bloglar, kompaniya daromadi va franchayzi savdosi aralashishi mumkin. Har bir raqam nimani anglatishini tekshiring.",q2:"PDF qidiruvi hisobot va rasmiy hujjatlarni topishi mumkin. Nashriyotchi, chop etilgan sana va ma’lumot yilini tekshiring.",q3:"Bu qidiruv natijalarini Naver sahifalari bilan cheklaydi. Naver’da joylashgani ma’lumot rasmiy yoki tasdiqlangan degani emas.",q4:"Bu chop etilgan sanani cheklaydi. Yangi maqolada ham eski ma’lumot bo‘lishi mumkin, shuning uchun ikkala sanani alohida yozing.",sourcesTitle:"5. Manbalar va tekshirish eslatmalari",s1title:"Koreya Adolatli Savdo Komissiyasi (KFTC) — franchayza ma’lumotlarini taqqoslash portali",s1desc:"Filiallar soni va yillik o‘rtacha savdoni tekshirish uchun rasmiy vosita.",s2title:"KFTC — 2024-yil franchayza biznesi statistikasi e’loni",s2desc:"Franchayza statistikasi va hisobot davrlari haqida rasmiy ma’lumot.",s3title:"Franchayza statistikasi xulosasi PDF fayli",s3desc:"Bu yerda ishlatilgan sonlarni ko‘rsatadigan xulosa. U KFTC saytida emas, universitet sahifasida joylashgan; rasmiy portal orqali qayta tekshiring.",s4title:"KFTC — ochiq ma’lumotlar va franchayza statistikasi",s4desc:"Ochiq ma’lumotlar va franchayzaga oid statistikaning rasmiy katalogi.",verifyLabel:"Topshirishdan oldin:",verify:"Rasmiy KFTC portalida har bir brendning 2024-yil oxiridagi filiallar sonini tekshiring. Farq bo‘lsa, jadvalni yangilang. Filiallar soni o‘rniga kompaniya daromadini ishlatmang.",footer:"Talabalar uchun tadqiqot qo‘llanmasi · Mobil qurilmalarga mos · Tashqi API kerak emas"},
+fil:{
+eyebrow:"Proyektong pananaliksik ng estudyante · Timog Korea",languageLabel:"Pumili ng wika",title:"Gabay sa Paghahambing ng mga Domestic Franchise",subtitle:"Ihambing ang tatlong kilalang Korean fried-chicken brand gamit ang iisang sukatan: bilang ng mga sangay ng franchise.",
+criteriaTitle:"1. Ano ang ating ikinukumpara?",industryLabel:"Industriya:",industry:"Mga fried-chicken restaurant sa Timog Korea.",metricLabel:"Sukatan:",metric:"Bilang ng mga sangay ng franchise, hindi kita ng kumpanya o karaniwang benta ng bawat sangay.",yearLabel:"Taon ng datos:",yearText:"Katapusan ng 2024. Magkaiba ang petsa ng paglalathala ng ulat at ang taon na saklaw ng datos.",warningLabel:"Mahalaga:",warning:"Hindi nangangahulugang mas malaki ang kita, mas mababa ang panimulang gastos, o mas mahusay ang kalidad kapag mas marami ang sangay. Bilang ng sangay lamang ang ikinukumpara rito.",
+brandsTitle:"2. Kilalanin ang tatlong brand",stores:"sangay",bbq:"Isang malaking Korean fried-chicken franchise na may malawak na network ng mga sangay sa bansa.",bhc:"Isang malaking Korean chicken brand na kilala sa fried chicken at mga pagkaing may iba’t ibang timpla.",kyochon:"Isang Korean chicken franchise na kilala sa soy-garlic at iba pang timpladong manok.",tableTitle:"3. Talahanayan ng paghahambing",tableNote:"Pare-pareho ang sukatan, yunit, at taon ng lahat ng bilang: mga sangay ng franchise sa katapusan ng 2024.",desc:"Pinakamataas hanggang pinakamababa",asc:"Pinakamababa hanggang pinakamataas",reset:"Ibalik ang ayos",brandHead:"Brand",countHead:"Mga sangay ng franchise",unitHead:"Yunit",baseHead:"Batayang taon",sourceHead:"Pinagmulan",baseYear:"Katapusan ng 2024",pdfSource:"PDF ng buod ng estadistika",findingLabel:"Resulta:",finding:"Sa tatlong brand, ang BBQ ang may pinakamalaking naiulat na network ng sangay, kasunod ang bhc at Kyochon Chicken. Hindi ito ranggo ng kita o kalidad.",searchTitle:"4. Kasaysayan ng Google search: apat na paraan",q1:"Maaaring maghalo ang balita, blog, kita ng kumpanya, at benta ng franchisee sa malawak na resulta. Alamin kung ano ang ibig sabihin ng bawat bilang.",q2:"Maaaring makahanap ng mga ulat at opisyal na dokumento ang PDF search. Tingnan ang naglathala, petsa ng publikasyon, at taon ng datos.",q3:"Nililimitahan nito ang resulta sa mga pahina ng Naver. Hindi awtomatikong opisyal o beripikado ang isang pahina dahil nasa Naver ito.",q4:"Nililimitahan nito ang petsa ng publikasyon. Maaaring lumang datos pa rin ang laman ng bagong post, kaya itala nang magkahiwalay ang dalawang petsa.",sourcesTitle:"5. Mga sanggunian at tala sa beripikasyon",s1title:"Korea Fair Trade Commission (KFTC) — Portal para ihambing ang franchise disclosure",s1desc:"Opisyal na tool para suriin ang impormasyon ng franchise, kabilang ang bilang ng sangay at taunang karaniwang benta.",s2title:"KFTC — Anunsyo ng estadistika ng franchise business para sa 2024",s2desc:"Opisyal na sanggunian tungkol sa estadistika ng franchise at mga panahon ng pag-uulat.",s3title:"PDF attachment ng buod ng estadistika ng franchise",s3desc:"Buod na naglalaman ng mga bilang na ginamit dito. Nasa website ito ng isang unibersidad, hindi sa domain ng KFTC, kaya tiyaking ihambing sa opisyal na portal.",s4title:"KFTC — Pampublikong impormasyon at estadistika ng franchise",s4desc:"Opisyal na direktoryo ng pampublikong impormasyon at estadistikang may kaugnayan sa franchise.",verifyLabel:"Bago isumite:",verify:"Buksan ang opisyal na KFTC portal at beripikahin ang bilang ng sangay ng bawat brand sa katapusan ng 2024. Kung iba ang opisyal na tala, baguhin ang talahanayan. Huwag palitan ang bilang ng sangay ng kita ng kumpanya.",footer:"Gabay sa pananaliksik ng estudyante · Mobile-friendly · Walang external API na kailangan"},
+vi:{
+eyebrow:"Dự án nghiên cứu sinh viên · Hàn Quốc",languageLabel:"Chọn ngôn ngữ",title:"Hướng dẫn so sánh các thương hiệu nhượng quyền trong nước",subtitle:"So sánh ba thương hiệu gà rán nổi tiếng của Hàn Quốc bằng cùng một tiêu chí: số lượng cửa hàng nhượng quyền.",
+criteriaTitle:"1. Chúng ta đang so sánh điều gì?",industryLabel:"Ngành:",industry:"Các nhà hàng gà rán tại Hàn Quốc.",metricLabel:"Tiêu chí:",metric:"Số lượng cửa hàng nhượng quyền, không phải doanh thu công ty hay doanh số trung bình mỗi cửa hàng.",yearLabel:"Năm dữ liệu:",yearText:"Cuối năm 2024. Ngày công bố báo cáo và năm dữ liệu được đề cập có thể khác nhau.",warningLabel:"Quan trọng:",warning:"Nhiều cửa hàng hơn không đồng nghĩa với lợi nhuận cao hơn, chi phí khởi nghiệp thấp hơn hoặc chất lượng tốt hơn. Trang này chỉ so sánh số lượng cửa hàng.",
+brandsTitle:"2. Giới thiệu ba thương hiệu",stores:"cửa hàng",bbq:"Một thương hiệu nhượng quyền gà rán lớn của Hàn Quốc với mạng lưới cửa hàng rộng khắp trong nước.",bhc:"Thương hiệu gà rán lớn của Hàn Quốc, nổi tiếng với gà rán và nhiều loại gia vị.",kyochon:"Thương hiệu gà rán Hàn Quốc được biết đến với hương vị xì dầu, tỏi và các loại sốt khác.",tableTitle:"3. Bảng so sánh",tableNote:"Tất cả số liệu dùng cùng tiêu chí, đơn vị và năm cơ sở: số cửa hàng nhượng quyền vào cuối năm 2024.",desc:"Từ cao xuống thấp",asc:"Từ thấp lên cao",reset:"Khôi phục thứ tự",brandHead:"Thương hiệu",countHead:"Cửa hàng nhượng quyền",unitHead:"Đơn vị",baseHead:"Năm cơ sở",sourceHead:"Nguồn",baseYear:"Cuối năm 2024",pdfSource:"PDF tóm tắt thống kê",findingLabel:"Kết quả:",finding:"Trong ba thương hiệu này, BBQ có mạng lưới cửa hàng được báo cáo lớn nhất, tiếp theo là bhc và Kyochon Chicken. Đây không phải bảng xếp hạng lợi nhuận hay chất lượng.",searchTitle:"4. Lịch sử tìm kiếm Google: bốn cách tìm",q1:"Kết quả rộng có thể trộn lẫn tin tức, blog, doanh thu công ty và doanh số của bên nhận nhượng quyền. Hãy kiểm tra ý nghĩa của từng con số.",q2:"Tìm kiếm PDF có thể tìm được báo cáo và tài liệu chính thức. Hãy kiểm tra đơn vị phát hành, ngày công bố và năm dữ liệu.",q3:"Cách tìm này giới hạn kết quả trong các trang Naver. Một trang trên Naver không tự động là nguồn chính thức hoặc đã được xác minh.",q4:"Cách tìm này giới hạn ngày công bố. Bài viết mới vẫn có thể dùng dữ liệu cũ, vì vậy hãy ghi riêng ngày công bố và năm dữ liệu.",sourcesTitle:"5. Nguồn và lưu ý xác minh",s1title:"Ủy ban Thương mại Công bằng Hàn Quốc (KFTC) — Cổng so sánh thông tin nhượng quyền",s1desc:"Công cụ chính thức để kiểm tra thông tin nhượng quyền, bao gồm số cửa hàng và doanh số trung bình hằng năm.",s2title:"KFTC — Thông báo thống kê kinh doanh nhượng quyền năm 2024",s2desc:"Nguồn chính thức về thống kê nhượng quyền và kỳ báo cáo.",s3title:"Tệp PDF tóm tắt thống kê nhượng quyền",s3desc:"Bản tóm tắt liệt kê các số liệu được dùng ở đây. Tệp được lưu trên trang của một trường đại học, không phải tên miền KFTC, nên cần đối chiếu với cổng chính thức.",s4title:"KFTC — Thông tin công khai và thống kê nhượng quyền",s4desc:"Danh mục chính thức về thông tin công khai và thống kê liên quan đến nhượng quyền.",verifyLabel:"Trước khi nộp bài:",verify:"Mở cổng KFTC chính thức và xác minh số cửa hàng cuối năm 2024 của từng thương hiệu. Nếu hồ sơ chính thức khác, hãy cập nhật bảng. Không thay số cửa hàng bằng doanh thu công ty.",footer:"Hướng dẫn nghiên cứu sinh viên · Tương thích điện thoại · Không cần API bên ngoài"}
+};
+function applyLanguage(lang){
+ const t=translations[lang]||translations.en;
+ document.documentElement.lang=lang==='ne'?'ne':lang==='uz'?'uz':lang==='fil'?'fil':lang==='vi'?'vi':'en';
+ document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(t[key])el.textContent=t[key]});
+}
+document.getElementById('language').addEventListener('change',e=>applyLanguage(e.target.value));
+const tbody=document.getElementById('rows');const original=Array.from(tbody.querySelectorAll('tr'));
+function sortRows(dir){const rows=Array.from(tbody.querySelectorAll('tr'));rows.sort((a,b)=>dir==='asc'?Number(a.dataset.count)-Number(b.dataset.count):Number(b.dataset.count)-Number(a.dataset.count));rows.forEach(r=>tbody.appendChild(r))}
+document.getElementById('desc').addEventListener('click',()=>sortRows('desc'));
+document.getElementById('asc').addEventListener('click',()=>sortRows('asc'));
+document.getElementById('reset').addEventListener('click',()=>original.forEach(r=>tbody.appendChild(r)));
 </script>
-</body>
-</html>
+</body></html>
