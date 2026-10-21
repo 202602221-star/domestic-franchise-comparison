@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A multilingual guide comparing three South Korean fried-chicken franchise brands.">
+<title>Guide to Comparing Domestic Franchises</title>
+<style>
+:root{--ink:#18212f;--muted:#596579;--paper:#f6f7fb;--card:#fff;--line:#dfe4ec;--accent:#ed6a3a;--navy:#182b49}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+header{background:linear-gradient(125deg,#182b49,#304d72);color:#fff;padding:40px 0}.wrap{max-width:1080px;margin:auto;padding:0 20px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:700;color:#ffd6c6}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;margin:12px 0}header p{max-width:780px;color:#e7edf5;margin:8px 0}
+select{padding:10px 12px;border:1px solid #ccd4df;border-radius:10px;background:#fff;color:#18212f;font-size:1rem}
+main{padding:22px 0 50px}.section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 5px 20px #182b4908}
+h2{margin:0 0 12px;color:var(--navy);font-size:1.4rem}h3{margin:0 0 7px;color:var(--navy)}
+.small{font-size:.92rem;color:var(--muted)}.brands{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.brand{border:1px solid var(--line);border-radius:13px;padding:17px;background:#fff}.number{font-size:1.25rem;font-weight:800;color:#a93d1c;line-height:1.3}
+.notice{border-left:4px solid var(--accent);padding:12px 15px;background:#fff6f1;border-radius:0 10px 10px 0}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:580px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f0f3f8;color:var(--navy)}tbody tr:last-child td{border-bottom:0}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 16px}button{border:0;border-radius:10px;background:var(--navy);color:#fff;padding:11px 15px;font-size:.95rem;font-weight:700;cursor:pointer}button.secondary{background:#e9edf4;color:var(--navy)}
+.query{padding:13px;border:1px solid var(--line);border-radius:12px;margin:11px 0}.query code{display:block;overflow-wrap:anywhere;color:#a33c1b;font-weight:700;margin-bottom:5px}
+a{color:#1d5ca8;overflow-wrap:anywhere}.sources li{margin:11px 0}.footer{text-align:center;color:var(--muted);font-size:.88rem;padding:20px}
+@media(max-width:720px){.wrap{padding:0 14px}.brands{grid-template-columns:1fr}.section{padding:17px}th,td{padding:9px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="top"><div class="eyebrow">Student research project · South Korea</div>
+<label>Choose language
+<select id="language" aria-label="Choose language">
+<option value="en">English</option><option value="ne">नेपाली (Nepali)</option><option value="uz">O‘zbekcha (Uzbek)</option><option value="fil">Filipino</option><option value="vi">Tiếng Việt (Vietnamese)</option>
+</select></label></div>
+<h1 data-i18n="title">Guide to Comparing Domestic Franchises</h1>
+<p data-i18n="subtitle">Compare three well-known South Korean fried-chicken brands using one consistent measure: the number of franchise locations.</p>
+<p><strong>Created by:</strong> Sarraf Priti</p>
+</div></header>
+<main class="wrap">
+<section class="section"><h2>1. What are we comparing?</h2>
+<p><strong>Industry:</strong> Fried-chicken restaurants in South Korea.</p>
+<p><strong>Metric:</strong> Number of franchise locations (stores), not company revenue or average sales per store.</p>
+<p><strong>Data year:</strong> 2025 year-end.</p>
+<div class="notice"><strong>Important:</strong> A larger store count does not prove higher profit, lower startup costs, or better quality. This page compares store count only.</div>
+</section>
+<section class="section"><h2>2. Meet the three brands</h2>
+<div class="brands">
+<article class="brand"><h3>BBQ (비비큐)</h3><div class="number">2025 count: Unverified</div><p>A major Korean fried-chicken franchise with a large domestic store network.</p></article>
+<article class="brand"><h3>bhc (비에이치씨)</h3><div class="number">2025 count: Unverified</div><p>A large Korean chicken brand known for fried chicken and seasoned menu options.</p></article>
+<article class="brand"><h3>Kyochon Chicken (교촌치킨)</h3><div class="number">2025 count: Unverified</div><p>A Korean chicken franchise associated with soy-garlic and other seasoned chicken.</p></article>
+</div></section>
+<section class="section"><h2>3. Comparison table</h2>
+<p class="small">The 2025 year-end counts are not yet verified consistently for all three brands. Values are marked Unverified; sorting is disabled until comparable numeric data is confirmed.</p>
+<div class="controls"><button id="desc">Highest to Lowest</button><button id="asc" class="secondary">Lowest to Highest</button><button id="reset" class="secondary">Reset order</button></div>
+<div class="table-wrap"><table><thead><tr><th>Brand</th><th>Franchise locations</th><th>Unit</th><th>Base year</th><th>Source</th></tr></thead>
+<tbody id="rows">
+<tr><td><strong>BBQ (비비큐)</strong></td><td>Unverified</td><td>stores</td><td>2025 year-end</td><td><a href="https://franchise.ftc.go.kr/firHope/comparePopup.do" target="_blank" rel="noopener">KFTC disclosure portal</a></td></tr>
+<tr><td><strong>bhc (비에이치씨)</strong></td><td>Unverified</td><td>stores</td><td>2025 year-end</td><td><a href="https://franchise.ftc.go.kr/firHope/comparePopup.do" target="_blank" rel="noopener">KFTC disclosure portal</a></td></tr>
+<tr><td><strong>Kyochon Chicken (교촌치킨)</strong></td><td>Unverified</td><td>stores</td><td>2025 year-end</td><td><a href="https://franchise.ftc.go.kr/firHope/comparePopup.do" target="_blank" rel="noopener">KFTC disclosure portal</a></td></tr>
+</tbody></table></div>
+<p><strong>Finding:</strong> A fair 2025 ranking cannot be shown yet because comparable, verified year-end counts for all three brands have not been confirmed. This page avoids inventing values.</p>
+</section>
+<section class="section"><h2>4. Google search history: four search criteria</h2>
+<div class="query"><code>Domestic franchise revenue rankings</code><p>Broad results can mix news, blogs, company revenue, and franchisee sales. Check what each number means.</p></div>
+<div class="query"><code>Domestic franchise revenue rankings filetype:pdf</code><p>PDF searches can find reports and official documents. Check the publisher, publication date, and data year.</p></div>
+<div class="query"><code>Domestic franchise revenue rankings site:naver.com</code><p>This limits results to Naver pages. A page being on Naver does not automatically make it official or verified.</p></div>
+<div class="query"><code>Domestic franchise revenue rankings after:2024-06-01 before:2026-01-01</code><p>This limits publication dates. A recent post can still use older data, so record publication date and data year separately.</p></div>
+</section>
+<section class="section"><h2>5. Sources and verification notes</h2>
+<ol class="sources">
+<li><a href="https://franchise.ftc.go.kr/firHope/comparePopup.do" target="_blank" rel="noopener">Korea Fair Trade Commission (KFTC) — Franchise disclosure comparison portal</a><br><span class="small">Official tool for checking franchise disclosure information, including store counts and average franchisee sales by year.</span></li>
+<li><a href="https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=45987&pageIndex=1&pageUnit=10&rltnNttSn=43749&searchCnd=all&searchCtgry=01%2C02&searchViolt=13" target="_blank" rel="noopener">KFTC — 2024 franchise business statistics announcement</a><br><span class="small">Official background source about franchise statistics and reporting periods.</span></li>
+<li><a href="https://ipsi.u1.ac.kr/u1job/community/notice.do?articleNo=76294&attachNo=51263&mode=download" target="_blank" rel="noopener">Franchise statistics summary PDF attachment</a><br><span class="small">A summary source; cross-check figures against the official KFTC portal.</span></li>
+<li><a href="https://www.ftc.go.kr/www/contents.do?key=267" target="_blank" rel="noopener">KFTC — Public information and franchise-related statistics</a><br><span class="small">Official directory for public information and franchise-related statistics.</span></li>
+</ol>
+<div class="notice"><strong>Before submitting:</strong> The available report checked during preparation contains 2024-based figures. In this 2025 version, each count is marked Unverified until all three figures are confirmed from official KFTC disclosures. Do not copy older figures into the 2025 column.</div>
+</section>
+<footer class="footer">Student research guide · Responsive design · No external APIs required</footer>
+</main>
+<script>
+const translations={
+en:{title:"Guide to Comparing Domestic Franchises",subtitle:"Compare three well-known South Korean fried-chicken brands using one consistent measure: the number of franchise locations."},
+ne:{title:"घरेलु फ्रेन्चाइज तुलना गर्ने मार्गदर्शिका",subtitle:"दक्षिण कोरियाका तीन लोकप्रिय फ्राइड चिकेन ब्रान्डलाई एउटै मापदण्ड—फ्रेन्चाइज पसलको सङ्ख्या—का आधारमा तुलना गर्नुहोस्।"},
+uz:{title:"Mahalliy franchayzalarni taqqoslash qo‘llanmasi",subtitle:"Janubiy Koreyadagi uchta mashhur qovurilgan tovuq brendini filiallar soni bo‘yicha taqqoslang."},
+fil:{title:"Gabay sa Paghahambing ng mga Domestic Franchise",subtitle:"Ihambing ang tatlong kilalang Korean fried-chicken brand gamit ang bilang ng mga sangay ng franchise."},
+vi:{title:"Hướng dẫn so sánh các thương hiệu nhượng quyền trong nước",subtitle:"So sánh ba thương hiệu gà rán nổi tiếng của Hàn Quốc bằng số lượng cửa hàng nhượng quyền."}
+};
+document.getElementById('language').addEventListener('change',e=>{const t=translations[e.target.value]||translations.en;document.querySelectorAll('[data-i18n]').forEach(el=>{if(t[el.dataset.i18n])el.textContent=t[el.dataset.i18n]});document.documentElement.lang=e.target.value;});
+const rows=document.getElementById('rows');
+document.getElementById('desc').addEventListener('click',()=>{});
+document.getElementById('asc').addEventListener('click',()=>{});
+document.getElementById('reset').addEventListener('click',()=>{});
+</script>
+</body>
+</html>
